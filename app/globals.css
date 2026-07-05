@@ -1,41 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-mono: var(--font-plex), ui-monospace, monospace;
+  --color-krem70: #efe6d0;
+  --color-cokelat: #4a3426;
+  --color-oranye70: #e0762e;
+  --color-mustard: #d9a441;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-krem70);
+  background-image: repeating-linear-gradient(90deg, transparent 0 60px, rgba(74, 52, 38, 0.05) 60px 61px);
+  color: var(--color-cokelat);
+  font-family: var(--font-plex), ui-monospace, monospace;
+  overflow-x: hidden;
 }
 
-@keyframes float-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(15px); }
-}
-@keyframes float-alt {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
-.animate-float-slow {
-  animation: float-slow 8s ease-in-out infinite;
-}
-.animate-float-alt {
-  animation: float-alt 7s ease-in-out infinite;
-}
+/* Bodi kaset */
+.tape { background: linear-gradient(180deg, #5a4030, #47331f); box-shadow: 0 16px 44px -16px rgba(74, 52, 38, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15); }
+
+/* Reel */
+@keyframes reel { to { transform: rotate(360deg); } }
+.reel { animation: reel 3.4s linear infinite; background:
+  radial-gradient(circle, #efe6d0 0 26%, transparent 26.5%),
+  conic-gradient(#2b1d12 0 20deg, transparent 20deg 60deg, #2b1d12 60deg 80deg, transparent 80deg 120deg, #2b1d12 120deg 140deg, transparent 140deg 180deg, #2b1d12 180deg 200deg, transparent 200deg 240deg, #2b1d12 240deg 260deg, transparent 260deg 300deg, #2b1d12 300deg 320deg, transparent 320deg); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.6s ease-out both; }
+
+:focus-visible { outline: 2px solid var(--color-oranye70); outline-offset: 3px; border-radius: 8px; }
