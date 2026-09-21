@@ -3,10 +3,10 @@ import "./globals.css";
 
 const plex = IBM_Plex_Mono({ subsets: ["latin"], variable: "--font-plex", weight: ["400", "500", "700"] });
 
-const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"KASET KITA","description":"Kolektif musik & radio komunitas","url":"https://kaset.pintuweb.com"};
+const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":"KASET KITA","description":"Kolektif musik & radio komunitas","url":"https://linkinbio-kaset.vercel.app"};
 
 export const metadata = {
-  metadataBase: new URL("https://kaset.pintuweb.com"),
+  metadataBase: new URL("https://linkinbio-kaset.vercel.app"),
   title: "KASET KITA — Mixtape & Radio",
   description: "Link in bio kolektif musik & radio komunitas KASET KITA: mixtape bulanan, arsip siaran, dan cara ikut siaran.",
   applicationName: "KASET KITA",
@@ -14,11 +14,11 @@ export const metadata = {
   authors: [{ name: "KASET KITA" }],
   creator: "KASET KITA",
   publisher: "KASET KITA",
-  alternates: { canonical: "https://kaset.pintuweb.com" },
+  alternates: { canonical: "https://linkinbio-kaset.vercel.app" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://kaset.pintuweb.com",
+    url: "https://linkinbio-kaset.vercel.app",
     siteName: "KASET KITA",
     title: "KASET KITA — Mixtape & Radio",
     description: "Link in bio kolektif musik & radio komunitas KASET KITA: mixtape bulanan, arsip siaran, dan cara ikut siaran.",
