@@ -7,10 +7,10 @@ const __jsonld = {"@context":"https://schema.org","@type":"Organization","name":
 
 export const metadata = {
   metadataBase: new URL("https://linkinbio-kaset.vercel.app"),
-  title: "KASET KITA — Mixtape & Radio",
-  description: "Link in bio kolektif musik & radio komunitas KASET KITA: mixtape bulanan, arsip siaran, dan cara ikut siaran.",
+  title: { default: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung", template: "%s — Kaset Kita FM" },
+  description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.",
   applicationName: "KASET KITA",
-  keywords: ["link in bio", "radio komunitas", "mixtape", "kolektif musik", "podcast"],
+  keywords: ["radio komunitas bandung", "mixtape lokal", "kirim demo band", "jadwal siaran", "link in bio radio"],
   authors: [{ name: "KASET KITA" }],
   creator: "KASET KITA",
   publisher: "KASET KITA",
@@ -20,14 +20,14 @@ export const metadata = {
     locale: "id_ID",
     url: "https://linkinbio-kaset.vercel.app",
     siteName: "KASET KITA",
-    title: "KASET KITA — Mixtape & Radio",
-    description: "Link in bio kolektif musik & radio komunitas KASET KITA: mixtape bulanan, arsip siaran, dan cara ikut siaran.",
-    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "KASET KITA — Mixtape & Radio" }],
+    title: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung",
+    description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KASET KITA — Mixtape & Radio",
-    description: "Link in bio kolektif musik & radio komunitas KASET KITA: mixtape bulanan, arsip siaran, dan cara ikut siaran.",
+    title: "Kaset Kita FM — Mixtape & Radio Komunitas, Bandung",
+    description: "Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.",
     images: ["/og.jpg"],
   },
   robots: {
@@ -39,8 +39,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="id">
-      <body className={`${plex.variable} antialiased`}>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
+    <html lang="id" className={`${plex.variable}`}>
+      <body className="antialiased">{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         </body>
     </html>
   );

@@ -6,6 +6,8 @@
   --color-cokelat: #4a3426;
   --color-oranye70: #e0762e;
   --color-mustard: #d9a441;
+  --color-oranye-ink: #a4481a; /* oranye gelap untuk teks (4,9:1 di atas krem) */
+  --color-mustard-ink: #7a5710; /* mustard gelap untuk teks */
 }
 
 body {

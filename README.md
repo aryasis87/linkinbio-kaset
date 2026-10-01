@@ -1,12 +1,12 @@
-# KASET KITA — Mixtape & Radio
+# Kaset Kita FM — Mixtape & Radio Komunitas, Bandung
 
-Link in bio kolektif musik & radio komunitas KASET KITA: mixtape bulanan, arsip siaran, dan cara ikut siaran.
+Tautan Kaset Kita FM, radio komunitas di Bandung: siaran berikutnya dihitung menurut WIB, jadwal mingguan, arsip mixtape dengan tracklist band lokal, kirim demo, dan jadi penyiar tamu.
 
 **Demo live:** https://linkinbio-kaset.vercel.app
 
 ![Tangkapan layar KASET KITA](public/og.jpg)
 
-> Template link-in-bio dengan persona fiktif.
+> Template link-in-bio dengan persona fiktif. Akun, klien, harga, dan jadwal hanya contoh; tautan utama menuju halaman dalam yang benar-benar ada, dan formulir tidak mengirim data.
 
 ## Konsep
 
@@ -14,7 +14,9 @@ Persona Kaset Kita FM, radio kolektif. Mixtape kaset dengan dua gulungan yang be
 
 ## Halaman
 
-`/`
+- `/` — kaset C-60 dengan dua gulungan berputar dan status siaran berikutnya, tautan Side A/B
+- `/siaran` — siaran berikutnya (WIB), jadwal tiga acara mingguan, formulir penyiar tamu
+- `/mixtape` — arsip empat mixtape bertracklist (details), formulir kirim demo
 
 ## Teknologi
 
